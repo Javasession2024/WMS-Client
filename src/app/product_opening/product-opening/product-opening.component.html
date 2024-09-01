@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Opening Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+             
+      margin: 70px;
+    
+        }
+
+        button:hover {
+            background-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Product Opening Form</h2>
+            <form>
+                               <div class="form-group">
+                    <label for="flavour">Product Name:</label>
+                    <select id="flavour" name="flavour">
+                        <option value="">Select Product</option>
+                        <option value="Chocolate">Kignfisher</option>
+                        <option value="Vanilla">Godfather</option>
+                        <option value="Strawberry">Haywards</option>
+                        <option value="Mango">Budweiser</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ml">ML:</label>
+                    <input type="number" id="ml" name="ml" placeholder="Enter ML">
+                </div>
+                <div class="form-group">
+                    <label for="openingBalance">Opening Balance:</label>
+                    <input type="number" id="openingBalance" name="openingBalance" placeholder="Enter Opening Balance">
+                </div>
+                <div class="form-group">
+                    <label for="flavour">Flavours:</label>
+                    <select id="flavour" name="flavour">
+                        <option value="">Select Flavour</option>
+                        <option value="Chocolate">slight sweetness</option>
+                        <option value="Vanilla">Dark Fruits</option>
+                        <option value="Strawberry">Sour</option>
+                        <option value="Mango">Fruity</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" placeholder="Enter Price">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Back</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
