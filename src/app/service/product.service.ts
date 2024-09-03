@@ -7,11 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-  constructor(private http: HttpClient) { }
-
   private baseUrl='http://localhost:8080/';
 
+  constructor(private http: HttpClient) { }
+
+  
+
   saveProduct(product: object) : Observable<Object> {
-    return this.http.post(`${this.baseUrl}/api/saveProduct`,product);
+    return this.http.post(`${this.baseUrl}/api/savepp`,product);
   }
 }

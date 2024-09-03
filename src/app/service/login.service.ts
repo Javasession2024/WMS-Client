@@ -14,8 +14,9 @@ export class LoginService {
 
   checkingcredentials(user: object): Observable<Object>{
     return this.http.post(`${this.baseUrl}/checking`, user);
+
   }
 
 
-
+  
 }

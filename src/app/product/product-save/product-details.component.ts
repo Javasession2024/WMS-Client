@@ -10,6 +10,8 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
+  submitted=false;
+
   product : Product = new Product();
 
   constructor(private router : Router,
@@ -19,7 +21,18 @@ export class ProductDetailsComponent implements OnInit {
     
   }
 
-  saveProduct(product : Object) {
+  // saveProduct(product : Object) {
+  //   this.productservice.saveProduct(this.product).subscribe(data => console.log(data), error => console.log(error));
+  //   this.product = new Product();
+  // }
+  save(){
     this.productservice.saveProduct(this.product).subscribe(data => console.log(data), error => console.log(error));
+    this.product = new Product();
   }
+  onSubmit(){
+      
+    this.save();
+  }
+
+  
 }

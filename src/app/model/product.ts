@@ -1,6 +1,6 @@
 export class Product {
-    product_name:string;
-    flavours:string;
+    productName:string;
+    flavour:string;
     ml:number;
-    price:number;
+    prise:number;
 }
