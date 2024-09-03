@@ -16,5 +16,6 @@ export class HeaderComponent implements OnInit {
 
   gotoList(){
     this.router.navigate(['/login']);
+    this.router.navigate(['/product-save']);
   }
 }
