@@ -1,1 +1,9 @@
 # WMS-Client
+
+# Project - Modules
+
+Components: Description
+1. Login: User can log into application using username and password.
+2. Home: User can see all brands and input fiels to search brands leftside. After section of Product it will shows all product right side form and below print button will print inovice. 
+3. ProductCreate: User can add new product which is newely launch in market.
+4. ProductStock: It will shows whole shop product stock.
