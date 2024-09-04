@@ -13,3 +13,18 @@ Pending Implementation:
 1. popup massage after saving product currently sever side.
 2. Eleminate unwanted attributes from html
 3. Proper name for component
+
+
+Praful: ProductAdd
+Package name change
+
+Sarita: HomePage Need to discugess with Irfan
+
+Swati: ProductStock (We can see number of product which we have )   sr. productname, quantity,prise,ml, flavour     
+
+Sonal: Forget password/user UI part      ---Backend pending
+
+Sakshi:  Billing form
+
+Vaibhav: Spring Securty Back+ UI ()
+
