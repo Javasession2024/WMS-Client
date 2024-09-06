@@ -8,19 +8,19 @@
         <h2>Add Product Form</h2>
         <div class="mb-3">
           <label for="prod_name" class="form-label">Product Name</label>
-          <input type="text" class="form-control" id="prod_name" name ="prod_name" required [(ngModel)]="product.productName" >
+          <input type="text" class="form-control" id="prod_name" name ="prod_name" required [(ngModel)]="product.product_Name" >
         </div>
         <div class="mb-3">
             <label for="prod_flavour" class="form-label">Product Flavour</label>
-            <input type="text" class="form-control" id="prod_flavour" name="prod_flavour" required [(ngModel)]="product.flavour">
+            <input type="text" class="form-control" id="prod_flavour" name="prod_flavour" required [(ngModel)]="product.flavours">
         </div>
         <div class="mb-3">
           <label class="form-label" for="ml">ML</label>
-          <input type="text" class="form-control" id="ml" name="ml"r equired [(ngModel)]="product.ml">
+          <input type="number" class="form-control" id="ml" name="ml"r equired [(ngModel)]="product.mL">
         </div>
         <div class="mb-3">
             <label for="prod_price" class="form-label">Price</label>
-            <input type="text" pattern="[0-9]" class="form-control" name="prod_price" id="prod_price" required [(ngModel)]="product.prise">
+            <input type="text" pattern="[0-9]" class="form-control" name="prod_price" id="prod_price" required [(ngModel)]="product.price">
         </div>
         
         <!-- <div class="mb-3">
@@ -33,9 +33,5 @@
     </div>
       </form>
     </div>
-   
-  
-<!-- <script src="product-details.component.js"></script> -->
-  
   
 </body>

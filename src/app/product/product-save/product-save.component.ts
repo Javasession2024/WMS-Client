@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/model/product';
 import { ProductService } from 'src/app/service/product.service';
 
 @Component({
-  selector: 'app-product-details',
-  templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css']
+  selector: 'app-product-save',
+  templateUrl: './product-save.component.html',
+  styleUrls: ['./product-save.component.css']
 })
-export class ProductDetailsComponent implements OnInit {
+export class ProductSaveComponent implements OnInit {
 
   submitted=false;
 
@@ -18,21 +18,16 @@ export class ProductDetailsComponent implements OnInit {
     private productservice : ProductService) { }
 
   ngOnInit(): void {
-    
   }
 
-  // saveProduct(product : Object) {
-  //   this.productservice.saveProduct(this.product).subscribe(data => console.log(data), error => console.log(error));
-  //   this.product = new Product();
-  // }
   save(){
     this.productservice.saveProduct(this.product).subscribe(data => console.log(data), error => console.log(error));
     this.product = new Product();
   }
+  
   onSubmit(){
-      
+    
     this.save();
   }
 
-  
 }

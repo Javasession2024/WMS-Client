@@ -9,8 +9,7 @@ import { HeaderComponent } from './header/header/header.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { HomeComponent } from './home/home/home.component';
 import { ProductOpeningComponent } from './product_opening/product-opening/product-opening.component';
-import { ProductDetailsComponent } from './product/product-save/product-details.component';
-
+import { ProductSaveComponent } from './product/product-save/product-save.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +18,7 @@ import { ProductDetailsComponent } from './product/product-save/product-details.
     FooterComponent,
     HomeComponent,
     ProductOpeningComponent,
-    ProductDetailsComponent,
+    ProductSaveComponent,
   ],
   imports: [
     BrowserModule,

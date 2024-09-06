@@ -14,6 +14,6 @@ export class ProductService {
   
 
   saveProduct(product: object) : Observable<Object> {
-    return this.http.post(`${this.baseUrl}/api/savepp`,product);
+    return this.http.post(`${this.baseUrl}/api/saveProduct`,product);
   }
 }
